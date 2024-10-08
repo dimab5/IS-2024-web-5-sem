@@ -47,6 +47,7 @@ body {
 
 .nav__link:hover {
     color: #ffd700;
+    text-decoration: underline;
 }
 
 /* Основной блок контента */
@@ -91,6 +92,23 @@ body {
 .book-card__img:hover {
     transform: scale(1.1); /* Увеличиваем изображение при наведении */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для кнопки "Купить" */
+.table__button {
+    background-color: #4a90e2; /* Синий цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 1em; /* Размер шрифта */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход для фона и трансформации */
+}
+
+.table__button:hover {
+    background-color: #357ab8; /* Темнее синий при наведении */
+    transform: translateY(-2px); /* Поднимаем кнопку при наведении */
 }
 
 /* Стили для футера */
@@ -186,4 +204,10 @@ body {
     .grid {
         grid-template-columns: repeat(4, 1fr); /* Четыре колонки для больших экранов */
     }
+}
+
+/* Стили для активного пункта меню */
+.nav__link.active {
+    color: #ffd700; /* Цвет текста для активного пункта */
+    border-bottom: 2px solid #ffd700; /* Добавляем подчеркивание для активного пункта */
 }

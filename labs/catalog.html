@@ -10,8 +10,13 @@
     <script src="js/common.js" defer></script>
     <script src="js/loadStats.js" defer></script>
     <script src="js/activeMenu.js" defer></script>
+    <script src="js/loadBooks.js" defer></script>
 </head>
 <body>
+<div id="preloader" class="preloader">
+    <div class="spinner"></div>
+</div>
+
 <header class="header">
     <h1 class="header__title">📚 Каталог книг</h1>
     <nav class="nav">
@@ -20,6 +25,7 @@
             <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
             <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
             <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="web-form.html">Форма</a></li>
         </ul>
     </nav>
 </header>
@@ -27,66 +33,9 @@
 <main class="main">
     <section class="main__section">
         <h2 class="main__title">📖 Наши книги</h2>
+        <button id="loadMoreButton" class="load-more-button">Загрузить еще книги</button> <!-- Кнопка перенесена сюда -->
         <div class="grid">
-            <!-- Первая книга -->
-            <div class="book-card">
-                <img class="book-card__img" src="images/voinaimir.jpg" alt="Война и Мир обложка">
-                <h3>Война и Мир</h3>
-                <p>Автор: Лев Толстой</p>
-                <p><strong>Описание:</strong> Эпопея о жизни нескольких семей в эпоху наполеоновских войн.</p>
-                <p><strong>Цена:</strong> 500 рублей</p>
-                <button class="table__button">Купить</button>
-            </div>
-
-            <!-- Вторая книга -->
-            <div class="book-card">
-                <img class="book-card__img" src="images/prestuplenieinakazanie.jpg" alt="Преступление и Наказание обложка">
-                <h3>Преступление и Наказание</h3>
-                <p>Автор: Фёдор Достоевский</p>
-                <p><strong>Описание:</strong> Психологический роман о нравственных дилеммах и внутренних терзаниях героя.</p>
-                <p><strong>Цена:</strong> 400 рублей</p>
-                <button class="table__button">Купить</button>
-            </div>
-
-            <!-- Третья книга -->
-            <div class="book-card">
-                <img class="book-card__img" src="images/idiot.jpg" alt="Идиот обложка">
-                <h3>Идиот</h3>
-                <p>Автор: Фёдор Достоевский</p>
-                <p><strong>Описание:</strong> Роман о судьбе князя Мышкина и его духовных поисках в сложном обществе.</p>
-                <p><strong>Цена:</strong> 450 рублей</p>
-                <button class="table__button">Купить</button>
-            </div>
-
-            <!-- Четвертая книга -->
-            <div class="book-card">
-                <img class="book-card__img" src="images/goncharov_oblomov.jpg" alt="Обломов обложка">
-                <h3>Обломов</h3>
-                <p>Автор: Иван Гончаров</p>
-                <p><strong>Описание:</strong> Роман о человеке, поглощённом бездействием и внутренним миром.</p>
-                <p><strong>Цена:</strong> 400 рублей</p>
-                <button class="table__button">Купить</button>
-            </div>
-
-            <!-- Пятая книга -->
-            <div class="book-card">
-                <img class="book-card__img" src="images/masterimargarita.jpg" alt="Мастер и Маргарита обложка">
-                <h3>Мастер и Маргарита</h3>
-                <p>Автор: Михаил Булгаков</p>
-                <p><strong>Описание:</strong> История любви, мистики и сатиры в советской Москве.</p>
-                <p><strong>Цена:</strong> 600 рублей</p>
-                <button class="table__button">Купить</button>
-            </div>
-
-            <!-- Шестая книга -->
-            <div class="book-card">
-                <img class="book-card__img" src="images/anna_karenina.jpg" alt="Анна Каренина обложка">
-                <h3>Анна Каренина</h3>
-                <p>Автор: Лев Толстой</p>
-                <p><strong>Описание:</strong> Роман о трагической любви и социальных столкновениях в российском обществе XIX века.</p>
-                <p><strong>Цена:</strong> 550 рублей</p>
-                <button class="table__button">Купить</button>
-            </div>
+            <!-- Здесь будут отображаться книги -->
         </div>
     </section>
 </main>

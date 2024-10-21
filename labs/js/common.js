@@ -6,6 +6,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const highlightElements = document.querySelectorAll('.highlight');
     highlightElements.forEach(el => {
-        el.style.backgroundColor = 'yellow'; // Выделяем элементы с классом .highlight
+        el.style.backgroundColor = 'yellow';
     });
 });
